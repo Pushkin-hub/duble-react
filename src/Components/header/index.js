@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container, Col, Image } from 'react-bootstrap';
+import logo from '../imeges/logo.png';
 
 const Header = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">
+            <Image src={logo} style={{width: "50px", height: "50px"}} roundedCircle />
+            React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
